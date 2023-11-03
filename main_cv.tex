@@ -62,13 +62,13 @@
 \TabPositions{\listtabwidth}
 \newlist{tablist}{description}{3}
 \setlist[tablist]{leftmargin=\listtabwidth,
-    labelindent=0em,
+    labelindent=\listtabwidth,
     topsep=0em,
     partopsep=0em,
     itemsep=\listitemspace,
     parsep=\listitemspace,
-    font=\normalfont,
-    align=justify}
+    font=\normalfont
+    }
 
 % print only the month and year when using \today
 \newdateformat{monthyeardate}{\monthname[\THEMONTH] \THEYEAR}
