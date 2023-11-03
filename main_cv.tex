@@ -59,16 +59,16 @@
 {\end{list}}
 
 % make tabbed lists so content is left-aligned next to years
-\TabPositions{\listtabwidth}
-\newlist{tablist}{description}{3}
-\setlist[tablist]{leftmargin=\listtabwidth,
-    labelindent=\listtabwidth,
-    topsep=0em,
-    partopsep=0em,
-    itemsep=\listitemspace,
-    parsep=\listitemspace,
-    font=\normalfont
-    }
+% \TabPositions{\listtabwidth}
+% \newlist{tablist}{description}{3}
+% \setlist[tablist]{leftmargin=\listtabwidth,
+%     labelindent=\listtabwidth,
+%     topsep=0em,
+%     partopsep=0em,
+%     itemsep=\listitemspace,
+%     parsep=\listitemspace,
+%     font=\normalfont
+%     }
 
 % print only the month and year when using \today
 \newdateformat{monthyeardate}{\monthname[\THEMONTH] \THEYEAR}
@@ -109,10 +109,10 @@
     \end{minipage}
 
     \section*{Education}
-    
-    \begin{tablist}
-      \item[S.Kom (B.Cs.)] \tab{}Computer Engineering, University of AMIKOM Yogyakarta, Indonesia, 2019-Present
-    \end{tablist}
+
+    \begin{tabular}{@{}p{0.2\textwidth}p{0.8\textwidth}}
+        S.Kom (B.Cs.) & Computer Engineering, University of AMIKOM Yogyakarta, Indonesia, 2019-Present \\
+    \end{tabular}
     
     \section*{Research Areas}
     \begin{itemize}
@@ -120,62 +120,62 @@
       \item Predicting Deep Learning Performance: reaching wise decision for the deep learning application on edge devices
     \end{itemize}
     
-    \section*{Publications}
-    \subsection*{Journal Articles}
-    \begin{tablist}
-        \item[-] \tab{}\fullcite{-}
-    \end{tablist}
+    % \section*{Publications}
+    % \subsection*{Journal Articles}
+    % \begin{tabular}{@{}p{0.2\textwidth}p{0.8\textwidth}}
+    %     - & fullcite{-}
+    % \end{tabular}
 
-    \subsection*{Conference Proceedings}
-    \begin{tablist}
-        \item[-] \tab{}\fullcite{-}
-    \end{tablist}
+    % \subsection*{Conference Proceedings}
+    % \begin{tabular}{@{}p{0.2\textwidth}p{0.8\textwidth}}
+    %     - & fullcite{-}
+    % \end{tabular}
 
     % \section*{INVITED TALKS}
     % \subsection*{Campus Talks}
 
-    \section*{Conference Activity}
-    \begin{tablist}
-        \item[-] \tab{}-
-    \end{tablist}
+    % \section*{Conference Activity}
+    % \begin{tabular}{@{}p{0.2\textwidth}p{0.8\textwidth}}
+    %     - & -
+    % \end{tabular}
 
-    \section*{Awards}
-    \subsection*{Awards and Honors}
-    \begin{tablist}
-        \item[-] \tab{}-
-    \end{tablist}
+    % \section*{Awards}
+    % \subsection*{Awards and Honors}
+    % \begin{tabular}{@{}p{0.2\textwidth}p{0.8\textwidth}}
+    %     - & -
+    % \end{tabular}
 
-    \section*{Teaching}
-    \begin{tablist}
-        \item[-] \tab{}-
-    \end{tablist}
+    % \section*{Teaching}
+    % \begin{tabular}{@{}p{0.2\textwidth}p{0.8\textwidth}}
+    %     - & -
+    % \end{tabular}
 
-    \section*{Service}
-    \subsection*{Academic Journal and Conference Peer Review}
-    \begin{itemize}
-        \item -
-    \end{itemize}
+    % \section*{Service}
+    % \subsection*{Academic Journal and Conference Peer Review}
+    % \begin{itemize}
+    %     \item -
+    % \end{itemize}
 
     \section*{Research Labs and Assistantship}
-    \begin{tablist}
-        \item[2022-Now] \tab{}Research Assistant at Research Collaboration with University of Georgia, AMIKOM
-        \item[2021-2023] \tab{}Research Assistant for New Normal Adaptation Monitoring Research, AMIKOM
-    \end{tablist}
 
-    \section*{Certificates}
-    \begin{tablist}
-        % \item[2022] \tab{}Graduate Certificate in Cybersecurity
-        \item[-] \tab{}-
-    \end{tablist}
+    \begin{tabular}{@{}p{0.2\textwidth}p{0.8\textwidth}}
+        2022-Now & Research Assistant at Research Collaboration with University of Georgia, AMIKOM \\
+        2021-2023 & Research Assistant for New Normal Adaptation Monitoring Research, AMIKOM \\
+    \end{tabular}
 
-    \section*{Professional Employment}
-    \begin{tablist}
-        \item[-] \tab{}-
-    \end{tablist}
+    % \section*{Certificates}
+    % \begin{tabular}{@{}p{0.2\textwidth}p{0.8\textwidth}}
+    %     - & -
+    % \end{tabular}
+
+    % \section*{Professional Employment}
+    % \begin{tabular}{@{}p{0.2\textwidth}p{0.8\textwidth}}
+    %     - & -
+    % \end{tabular}
 
     \section*{Skills}
-    \begin{tablist}
-        \item[Programming] \tab{}Python, C++ Arduino, JS, LaTex
-    \end{tablist}
+    \begin{tabular}{@{}p{0.2\textwidth}p{0.8\textwidth}}
+        Programming & Python, C++ Arduino, JS, LaTex \\
+    \end{tabular}
 
 \end{document}
