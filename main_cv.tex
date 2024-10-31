@@ -14,6 +14,28 @@
 \usepackage[maxcitenames=6, minnames=3 ]{biblatex}
 \addbibresource[]{biblio.bib}
 
+% bold the name of specific author
+\usepackage{xstring}
+\usepackage{etoolbox}
+\newboolean{bold}
+\newcommand{\makeauthorsbold}[1]{%
+  \DeclareNameFormat{author}{%
+  \setboolean{bold}{false}%
+    \renewcommand{\do}[1]{\expandafter\ifstrequal\expandafter{\namepartfamily}{####1}{\setboolean{bold}{true}}{}}%
+    \docsvlist{#1}%
+    \ifthenelse{\value{listcount}=1}
+    {%
+      {\expandafter\ifthenelse{\boolean{bold}}{\mkbibbold{\namepartfamily\addcomma\addspace \namepartgiveni}}{\namepartfamily\addcomma\addspace \namepartgiveni}}%
+    }{\ifnumless{\value{listcount}}{\value{liststop}}
+      {\expandafter\ifthenelse{\boolean{bold}}{\mkbibbold{\addcomma\addspace \namepartfamily\addcomma\addspace \namepartgiveni}}{\addcomma\addspace \namepartfamily\addcomma\addspace \namepartgiveni}}%
+      {\expandafter\ifthenelse{\boolean{bold}}{\mkbibbold{\addcomma\addspace \namepartfamily\addcomma\addspace \namepartgiveni\addcomma\isdot}}{\addcomma\addspace \namepartfamily\addcomma\addspace \namepartgiveni\addcomma\isdot}}%
+      }
+    \ifthenelse{\value{listcount}<\value{liststop}}
+    {\addcomma\space}{}
+  }
+}
+\makeauthorsbold{Nabhaan, Ahmad N. L.}
+
 % what is your name?
 \newcommand{\myname}{Ahmad Naufal Labiib Nabhaan}
 
@@ -58,6 +80,17 @@
                 \setlength{\parsep}{\listitemspace}}}
 {\end{list}}
 
+% make tabbed lists so content is left-aligned next to years
+\TabPositions{\listtabwidth}
+\newlist{tablist}{description}{3}
+\setlist[tablist]{leftmargin=\listtabwidth,
+    labelindent=0em,
+    topsep=0em,
+    partopsep=0em,
+    itemsep=\listitemspace,
+    parsep=\listitemspace,
+    font=\normalfont}
+
 % print only the month and year when using \today
 \newdateformat{monthyeardate}{\monthname[\THEMONTH] \THEYEAR}
 
@@ -98,46 +131,46 @@
 
     \section*{Education}
 
-    \begin{tabular}{@{}p{0.2\textwidth}p{0.8\textwidth}}
-        S.Kom (B.Cs.) & Computer Engineering, University of AMIKOM Yogyakarta, Indonesia, 2019-Present \\
-    \end{tabular}
+    \begin{tablist}
+        S.Kom (B.Cs.) & Computer Engineering, University of AMIKOM Yogyakarta, Indonesia, 2019-2025 \\
+    \end{tablist}
     
     \section*{Research Areas}
     \begin{itemize}
       \item Characterizing Hardware Performance when infering Deep Learning: analysis deep learning performance on edge devices with memory limitation scenario
-      \item Optimizing Hardware Performance when infering Deep Learning: reaching wise decision for the deep learning application on edge devices
+      \item Optimizing Hardware Performance when infering Deep Learning: reaching optimum performance for the deep learning application on edge devices
       \item Building Accurate Deep Learning for Object Detection: customization the state-of-the-art deep learning model to achieve accurate and robust object detection application
     \end{itemize}
     
     \section*{Publications}
     % \subsection*{Journal Articles}
-    % \begin{tabular}{@{}p{0.2\textwidth}p{0.8\textwidth}}
+    % \begin{tablist}
     %     - & fullcite{-}
-    % \end{tabular}
+    % \end{tablist}
 
     \subsection*{Conference Proceedings}
-    \begin{tabular}{@{}p{0.2\textwidth}p{0.8\textwidth}}
+    \begin{tablist}
         \item[2024] \tab{}\fullcite{edge24}
-    \end{tabular}
+    \end{tablist}
 
     % \section*{INVITED TALKS}
     % \subsection*{Campus Talks}
 
     % \section*{Conference Activity}
-    % \begin{tabular}{@{}p{0.2\textwidth}p{0.8\textwidth}}
+    % \begin{tablist}
     %     - & -
-    % \end{tabular}
+    % \end{tablist}
 
     \section*{Awards}
-    \subsection*{Awards and Honors}
-    \begin{tabular}{@{}p{0.2\textwidth}p{0.8\textwidth}}
-        Nominated for the Regional Preliminary Round at the BPJS Healthcare Healthkathon 2022 in Machine Learning Category
-    \end{tabular}
+    % \subsection*{Awards and Honors}
+    \begin{tablist}
+        \item[2022] \tab{}Nominated for the Regional Preliminary Round at the BPJS Healthcare Healthkathon 2022 in Machine Learning Category
+    \end{tablist}
 
     % \section*{Teaching}
-    % \begin{tabular}{@{}p{0.2\textwidth}p{0.8\textwidth}}
+    % \begin{tablist}
     %     - & -
-    % \end{tabular}
+    % \end{tablist}
 
     % \section*{Service}
     % \subsection*{Academic Journal and Conference Peer Review}
@@ -146,34 +179,33 @@
     % \end{itemize}
 
     \section*{Research Labs and Assistantship}
-    \setstretch{1.5}
-    \begin{tabular}{@{}p{0.2\textwidth}p{0.8\textwidth}}
-        2022-Now & Research Assistant at MoECRT ACE Open Research Collaboration with University of Georgia, AMIKOM \\
-        2022-2023 & Research Assistant for New Normal Adaptation Monitoring Research, AMIKOM \\
-        2022 Aug-Des & Lab Assistant at Artificial Intelligence, AMIKOM \\
-        2022 Feb-Jun & Lab Assistant at Computer Networking 1, AMIKOM \\
-        2022 Feb-Jun & Lab Assistant at Database, AMIKOM \\
-        2021-2022 & Lab Assistant at Operating System, AMIKOM \\
-    \end{tabular}
-    \setstretch{1.0}
+    \begin{tablist}
+        \item[2022-Now] \tab{}Research Assistant at MoECRT ACE Open Research Collaboration with University of Georgia, AMIKOM \\
+        \item[2022] \tab{}Research Assistant for New Normal Adaptation Monitoring Research, AMIKOM \\
+        \item[2022] \tab{}Lab Assistant at Artificial Intelligence, AMIKOM \\
+        \item[2022] \tab{}Lab Assistant at Computer Networking 1, AMIKOM \\
+        \item[2022] \tab{}Lab Assistant at Database, AMIKOM \\
+        \item[2021-2022] \tab{}Lab Assistant at Operating System, AMIKOM \\
+    \end{tablist}
+    
     % \section*{Certificates}
-    % \begin{tabular}{@{}p{0.2\textwidth}p{0.8\textwidth}}
+    % \begin{tablist}
     %     - & -
-    % \end{tabular}
+    % \end{tablist}
 
     % \section*{Professional Employment}
-    % \begin{tabular}{@{}p{0.2\textwidth}p{0.8\textwidth}}
+    % \begin{tablist}
     %     - & -
-    % \end{tabular}
+    % \end{tablist}
 
     \section*{Experiences}
-    \begin{tabular}{@{}p{0.2\textwidth}p{0.8\textwidth}}
-        2021 Oct-Dec & Take Industrial IoT Course, Domestic Student Exchange at Institut Teknologi Bandung
-    \end{tabular}
+    \begin{tablist}
+        \item[2021] \tab{}Take Industrial IoT Course, Domestic Student Exchange at Institut Teknologi Bandung
+    \end{tablist}
 
     \section*{Skills}
-    \begin{tabular}{@{}p{0.2\textwidth}p{0.8\textwidth}}
+    \begin{tablist}
         Programming & Python, C++ Arduino, JS, \LaTeX \\
-    \end{tabular}
+    \end{tablist}
 
 \end{document}
