@@ -1,16 +1,124 @@
-\documentclass[12pt,letterpaper]{report}
+    %-------------------------
+% Resume in Latex
+% Author
+% License : MIT
+%------------------------
 
-\usepackage[T1]{fontenc} % output T1 font encoding (8-bit) for accented characters as single glyph
-\usepackage[strict,autostyle]{csquotes} % smart and nestable quote marks
-\usepackage[USenglish]{babel} % regionalize hyphens, quote marks, etc automatically
-\usepackage{microtype}% improve text appearance with kerning, etc
-\usepackage{datetime} % enable formatting of date output
-\usepackage{tabto}    % make nice tabbing
-\usepackage{hyperref} % enable hyperlinks and pdf metadata
-\usepackage{geometry} % manually set page margins
-\usepackage{enumitem} % enumerate with [resume] option
-\usepackage{titlesec} % allow custom section fonts
-\usepackage{setspace} % custom line spacing
+%---- Required Packages and Functions ----
+
+\documentclass[a4paper,11pt]{article}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{0pt} 
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\geometry{left=1.4cm, top=0.8cm, right=1.2cm, bottom=1cm}
+% Adjust margins
+%\addtolength{\oddsidemargin}{-0.5in}
+%\addtolength{\evensidemargin}{-0.5in}
+%\addtolength{\textwidth}{1in}
+\usepackage[most]{tcolorbox}
+\tcbset{
+	frame code={}
+	center title,
+	left=0pt,
+	right=0pt,
+	top=0pt,
+	bottom=0pt,
+	colback=gray!20,
+	colframe=white,
+	width=\dimexpr\textwidth\relax,
+	enlarge left by=-2mm,
+	boxsep=4pt,
+	arc=0pt,outer arc=0pt,
+}
+
+\urlstyle{same}
+
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item{
+    \textbf{#1}{\hspace{0.5mm}#2 \vspace{-0.5mm}}
+  }
+}
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1}\hspace{0.3mm}#2 & \textit{\small{#3}} 
+    \end{tabular*}
+    \vspace{-2mm}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#4}} \\
+        \textit{\footnotesize{#3}} &  \footnotesize{#2}\\
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeProject}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#3}} \\
+        \footnotesize{\textit{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+% \renewcommand{\labelitemii}{$\circ$}
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=0mm]}
+\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1.7mm, rightmargin=2ex]}
+\newcommand{\resumeItemListStart}{\begin{justify}\begin{itemize}[leftmargin=3ex, rightmargin=2ex, noitemsep,labelsep=1.2mm,itemsep=0mm]\small}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{2mm}}
+\newcommand{\resumeHeadingSkillEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\end{justify}\vspace{-2mm}}
+\newcommand{\cvsection}[1]{%
+\vspace{2mm}
+\begin{tcolorbox}
+    \textbf{\large #1}
+\end{tcolorbox}
+    \vspace{-4mm}
+}
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+%---- End of Packages and Functions ------
+
 \usepackage[maxcitenames=6, minnames=3 ]{biblatex}
 \addbibresource[]{biblio.bib}
 
@@ -37,178 +145,219 @@
 \makeauthorsbold{Nabhaan, Ahmad N. L.}
 \makeauthorsbold{Nabhaan, Ahmad}
 
-% what is your name?
-\newcommand{\myname}{Ahmad Naufal Labiib Nabhaan}
-
-% select default typefaces
-\usepackage{ebgaramond} % document's serif typeface
-\usepackage{tgheros}    % document's sans serif typeface
-
-% how far to tab for list items with left-aligned date: different fonts need different widths
-\newcommand{\listtabwidth}{1.7cm}
-
-% define font to use as document's title
-\newcommand{\namefont}[1]{{\normalfont\bfseries\Huge{#1}}}
-
-% set section heading fonts and before/after spacing
-\SetTracking{encoding=*, family=\sfdefault}{30} % increase sans serif headings tracking
-\titleformat{\section}{\lsstyle\sffamily\small\bfseries\uppercase}{}{}{}{}
-\titlespacing{\section}{0pt}{30pt plus 4pt minus 4pt}{8pt plus 2pt minus 2pt}
-
-% set subsection heading fonts and before/after spacing
-\titleformat{\subsection}{\lsstyle\sffamily\footnotesize\bfseries}{}{}{}{}
-\titlespacing{\subsection}{0pt}{16pt plus 4pt minus 4pt}{4pt plus 2pt minus 2pt}
-
-% set page margins (assumes letter paper)
-\geometry{body={6.5in, 9.0in},
-    left=1.0in,
-    top=1.0in}
-
-% prevent paragraph indentation
-\setlength\parindent{0em}
-
-% set line spacing
-\setstretch{1.0}
-
-% define space between list items
-\newcommand{\listitemspace}{0.25em}
-
-% make unordered lists without bullets and use compact spacing
-\renewenvironment{itemize}
-{\begin{list}{}{\setlength{\leftmargin}{0em}
-                \setlength{\parskip}{0em}
-                \setlength{\itemsep}{\listitemspace}
-                \setlength{\parsep}{\listitemspace}}}
-{\end{list}}
-
-% make tabbed lists so content is left-aligned next to years
-\TabPositions{\listtabwidth}
-\newlist{tablist}{description}{3}
-\setlist[tablist]{leftmargin=\listtabwidth,
-    labelindent=0em,
-    topsep=0em,
-    partopsep=0em,
-    itemsep=\listitemspace,
-    parsep=\listitemspace,
-    font=\normalfont}
-
-% print only the month and year when using \today
-\newdateformat{monthyeardate}{\monthname[\THEMONTH] \THEYEAR}
-
-% define hyperlink appearance and metadata for pdf properties
-\hypersetup{
-    colorlinks  = true,
-    urlcolor    = black,
-    citecolor   = black,
-    linkcolor   = black,
-    pdfauthor   = {\myname},
-    pdfkeywords = {Edge Computing, Deep Learning, Machine Learning, Internet of Things},
-    pdftitle    = {\myname: Curriculum Vitae},
-    pdfsubject  = {Curriculum Vitae},
-    pdfpagemode = UseNone
-}
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%
+%%%%%% DEFINE ELEMENTS HERE %%%%%%%
+\newcommand{\name}{Ahmad Naufal Labiib Nabhaan} % Your Name
+\newcommand{\course}{Computer Engineering} % Your Program
+% \newcommand{\roll}{xxxxxxx} % Your Roll No.
+% \newcommand{\phone}{xxxxxxxx} % Your Phone Number
+\newcommand{\emaila}{nabhaan.ahmad.ln@gmail.com} %Email 1
 
 \begin{document}
-    % \nobibliography*
-    \raggedright{}
+\fontfamily{cmr}\selectfont
+%----------HEADING-----------------
 
-    % display your name as the document title
-    \namefont{\myname}
+{
+\begin{center}
+\begin{tabularx}{\linewidth}{C r} % Use 'c' for center alignment
+  \\
+  \textbf{\Huge \name} \\ % Adjust size with \Huge or \LARGE
+  \href{mailto:\emaila}{\raisebox{0.0\height}{\footnotesize \faEnvelope}\ {\emaila}} \href{https://github.com/administrator2992}{\raisebox{0.0\height}{\footnotesize \faGithub}\ {administrator2992}} \href{www.linkedin.com/in/ahmadnabhaan/}{\raisebox{0.0\height}{\footnotesize \faLinkedin}\ {ahmadnabhaan}}
+\end{tabularx}
+\end{center}
 
-    % % affiliation and contact info blocks
-    \vspace{1em}
-    \begin{minipage}[t]{0.700\textwidth}
-        \href{mailto:nabhaan.ahmad.ln@gmail.com}{nabhaan.ahmad.ln@gmail.com} \\
-        \href{https://administrator2992.github.io}{administrator2992.github.io}
-    \end{minipage}
+}
 
-    \section*{Education}
 
-    \begin{tablist}
-        \item[S.Kom (B.Cs.)] \tab{}Computer Engineering, University of AMIKOM Yogyakarta, Indonesia, 2019-2025 \\
-        \item[GPA : 3.88]
-    \end{tablist}
+%-----------EDUCATION-----------
+\section{\textbf{Education}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Bachelor of Computer Science in Computer Engineering (Internet of Things)}{GPA: 3.88}
+      {AMIKOM University Yogyakarta, Indonesia}{2019-2025}
+  \resumeSubHeadingListEnd
+\vspace{-5.5mm}
+%
+
+%-----------RESEARCH AREAS-----------
+\section{\textbf{Research Areas}}
+\resumeItemListStart
+  \item Edge Computing, Computer Vision, Machine Learning, Reinforcement Learning, Internet of Things, Hardware Optimization System
+\resumeItemListEnd
+\vspace{-3.5mm}
+
+%-----------ASSISTANTSHIP-----------------
+\section{\textbf{Assistantship Experience}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Research Assistant}{Online}
+      {AMIKOM University Yogyakarta}{Nov 2022 - Present}
+      \vspace{-1.0mm}
+      \resumeItemListStart
+    \item {Conducting collaboration research with Prof. In Kee Kim (University of Georgia) and Prof. Muhammad Santriaji (Gajah Mada Unviersity) to optimize hardware performance of Jetson Xavier NX for deep learning inference by using reinforcement learning under the guidance of Dr. Arief Setyanto.}
+    \item {Supported as an undergraduate research assistant by the MoECRT ACE Open Research program}
+    \resumeItemListEnd
     
-    \section*{Research Areas}
-    \begin{itemize}
-        \item Edge Computing, Object Detection, Optimization System, Internet of Things, Deep Learning
-    \end{itemize}
+    \vspace{-1.0mm}
     
-    \section*{Publications}
-    \subsection*{Journal Articles}
-    \begin{tablist}
-        \item[2024] \tab{}\fullcite{matrikraka}
-    \end{tablist}
+    \resumeSubheading
+      {Research Assistant}{Onsite}
+      {AMIKOM University Yogyakarta}{May 2022 - May 2023}
+      \vspace{-1.0mm}
+      \resumeItemListStart
+    \item {Conducting research on real-time object detection (YOLOv4) to detect masked face/wrong masked face/no masked face with a camera on the edge device.}
+    \item {Collecting face/wrong masked face/no masked face dataset.}
+    \item {Training YOLOv4 Model.}
+    \item {Operating Jetson Nano and Raspberry Pi 3B to implement real-time object detection application.}
+    \resumeItemListEnd
+    
+    \vspace{-1.0mm}
 
-    \subsection*{Conference Proceedings}
-    \begin{tablist}
-        \item[2024] \tab{}\fullcite{edge24}
-    \end{tablist}
+    \resumeSubheading
+      {Teaching Assistant Academic Calendar Odd Semester 2022/2023}{Onsite}
+      {AMIKOM University Yogyakarta}{Sep 2022 - Jan 2023}
+      \vspace{-1.0mm}
+      \resumeItemListStart
+    \item {Advanced Python Programming, Undergraduate Course : Assisting students to code API using Flask.}
+    \item {Artificial Intelligence, Undergraduate Course : Assisting students to design basic machine learning programs using Sklearn.}
+    \resumeItemListEnd
+    
+    \vspace{1.0mm}
 
-    % \section*{INVITED TALKS}
-    % \subsection*{Campus Talks}
+    \resumeSubheading
+      {Teaching Assistant Academic Calendar Even Semester 2021/2022}{Onsite}
+      {AMIKOM University Yogyakarta}{Feb 2022 - May 2022}
+      \vspace{-1.0mm}
+      \resumeItemListStart
+    \item {Computer Networking 1, Vocational Course : Assisting students to design basic network topologies using Cisco Packet Tracer.}
+    \item {Database, Undergraduate Course : Assisting students to access database using MariaDB query.}
+    \resumeItemListEnd
+    
+    \vspace{-1.0mm}
 
-    % \section*{Conference Activity}
-    % \begin{tablist}
-    %     - & -
-    % \end{tablist}
+    \resumeSubheading
+      {Teaching Assistant Academic Calendar Odd Semester 2021/2022}{Online}
+      {AMIKOM University Yogyakarta}{Sep 2021 - Jan 2022}
+      \vspace{-1.0mm}
+      \resumeItemListStart
+    \item {Operating System, Undergraduate Course : Assisting students to operate Linux and modify the desktop environment.}
+    \resumeItemListEnd
+    
+    \vspace{-1.0mm}
+      
+  \resumeSubHeadingListEnd
+\vspace{-5.5mm}
 
-    \section*{Awards}
-    % \subsection*{Awards and Honors}
-    \begin{tablist}
-        \item[2022] \tab{}Nominated for the Regional Preliminary Round at the BPJS Healthcare Healthkathon 2022 in Machine Learning Category
-    \end{tablist}
+%-----------ORGANIZATION AND VOLUNTEERING-----------------
+\section{\textbf{Organization and Volunteering}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Secretary of Computer Engineering Student Community}{Onsite}
+      {AMIKOM University Yogyakarta}{Agt 2020 - Agt 2022}
+      \vspace{-1.0mm}
+        \resumeItemListStart
+        \item {Managing administrations in Computer Engineering Student Community.}
+        \resumeItemListEnd
+    
+    \vspace{-1.0mm}
 
-    % \section*{Teaching}
-    % \begin{tablist}
-    %     - & -
-    % \end{tablist}
+    \resumeSubheading
+      {Secretary of Free Open Source Software Interest League Community}{Onsite}
+      {AMIKOM University Yogyakarta}{Agt 2020 - Agt 2022}
+      \vspace{-1.0mm}
+        \resumeItemListStart
+        \item {Managing administrations in Free Open Source Software Interest League Community.}
+        \resumeItemListEnd
+    
+    \vspace{-1.0mm}
 
-    % \section*{Service}
-    % \subsection*{Academic Journal and Conference Peer Review}
-    % \begin{itemize}
-    %     \item -
-    % \end{itemize}
+    \resumeSubheading
+    {Domestic Student Exchange Issued by the Indonesian Ministry of Education}{Online}
+    {\begin{tabularx}{0.5\textwidth}{X}
+        Borneo Tarakan University, Bandung Institute of Technology, \\
+        Bina Sarana Informatics University, Nusa Cendana University
+    \end{tabularx}}{Agt 2020 - Feb 2021}
+        \vspace{-1.0mm}
+        \resumeItemListStart
+            \item {Studying multidisciplinary courses and other Indonesian cultures (e.g., Dayak culture) at Borneo Tarakan University.}
+            \item {Studying Industrial Internet of Things (applies IoT system on industrial chicken coop) at Bandung Institute of Technology}
+            \item {Studying Scientific Methodology at Nusa Cendana University}
+            \item {Studying Artificial Intelligence at Bina Sarana Informatics University}
+    \resumeItemListEnd
+    
+    \vspace{-1.0mm}
 
-    \section*{Research Labs and Assistantship}
-    \setstretch{1.3}
-    \begin{tabular}{@{}p{0.15\textwidth}p{0.85\textwidth}}
-        2022-Now & Research Assistant at MoECRT ACE Open Research Collaboration with University of Georgia, AMIKOM \\
-        & Conducting research on hardware performance when infering compressed deep learning on edge devices. \textbf{GOAL: optimizing hardware performance for deep learning inference execution} \\
-        2022 & Research Assistant for New Normal Adaptation Monitoring Research, AMIKOM \\
-        & Conducting research on object detection (YOLOv4) to detect masked face/wrong masked face/no masked face with real-time camera on edge devices. \textbf{GOAL: classifying masked face/wrong masked face/no masked face accurately with real-time camera on edge devices} \\
-        2022 & Teaching Assistant at Advanced Python Programming Course, AMIKOM \\
-        & Assisting bachelor students to code API using Flask \\
-        2022 & Teaching Assistant at Artificial Intelligence Course, AMIKOM \\
-        & Assisting bachelor students to design basic machine learning programs using Sklearn \\
-        2022 & Teaching Assistant at Computer Networking 1 Course, AMIKOM \\
-        & Assisting diploma students to design basic network topologies using Cisco Packet Tracer \\
-        2022 & Teaching Assistant at Database Course, AMIKOM \\
-        & Assisting bachelor students to access database using MariaDB query \\
-        2021-2022 & Teaching Assistant at Operating System Course, AMIKOM \\
-        & Assisting bachelor students to operate Linux and modify the desktop environment \\
-    \end{tabular}
-    \setstretch{1.0}
+    \resumeSubHeadingListEnd
+\vspace{-5.5mm}
 
-    % \section*{Certificates}
-    % \begin{tablist}
-    %     - & -
-    % \end{tablist}
+%-----------PUBLICATIONS-----------------
+\section{\textbf{Publications}}
+\resumeSubHeadingListStart
+    \resumeSubheading
+    {Journal Articles}{}
+    {}{}
+    \vspace{-1.0mm}
+    \fullcite{matrikraka}
+    \resumeSubheading
+    {Conference Proceedings}{}
+    {}{}
+    \vspace{-1.0mm}
+    \fullcite{edge24}
+\resumeSubHeadingListEnd
+\vspace{-8.5mm}
 
-    % \section*{Professional Employment}
-    % \begin{tablist}
-    %     - & -
-    % \end{tablist}
 
-    \section*{Experiences}
-    \begin{tablist}
-        \item[2021] \tab{}Domestic Student Exchange at Institut Teknologi Bandung
-    \end{tablist}
+%-----------Technical skills-----------------
+\section{\textbf{Technical Skills and Interests}}
+ \begin{itemize}[leftmargin=0.05in, label={}]
+    \small{\item{
+    \textbf{Languages}{: Indonesia (Native), English (Intermediate), Arabic (Basic)} \\
+     \textbf{Programming Languages}{: Python, Javascript, HTML+CSS, Arduino C++, \LaTeX} \\
+     \textbf{Dev Tools}{: Nodejs, VScode, Git, Vim } \\ 
+     \textbf{Frameworks}{: Flask, Sklearn, TensorFlow, PyTorch, RoboFlow } \\
+     \textbf{Cloud/Databases}{: MariaDB, SQLite } \\  
+     
+     \textbf{Relevent Coursework}{: Operating Systems, Advanced Python Programming, Advanced Machine Learning, Artificial Intelligence, Edge Computing, Industrial Internet of Things, Cloud Computing. } \\ 
+    }}
+ \end{itemize}
+ \vspace{-16pt}
 
-    \section*{Skills}
-    \begin{tablist}
-        \item[Programming] \tab{}Python, C++ Arduino, JS, \LaTeX \\
-        \item[Communication] \tab{}Indonesia (Native), English (High Intermediate), Arabic (Basic) \\
-    \end{tablist}
 
+
+% %-----------Positions of Responsibility-----------------
+% \section{\textbf{Positions of Responsibility}}
+% \vspace{-0.4mm}
+% \resumeSubHeadingListStart
+% \resumePOR{On Desk Registrations Volunteer } % Position
+%     {Aarhant Cyber Week Event - RCOEM, Nagpur} %Club,Event
+%     {Oct - Dec 2022} %Tenure Period \\
+%     \resumeItemListStart
+%     \item {Helped to attract close to 300 attendees to the event.}
+%     \item {Collected over Rs. 20,000 in entry fees for different activities.}
+%     \resumeItemListEnd
+
+% \resumeSubHeadingListEnd
+% \vspace{-5mm}
+
+
+
+
+% %-----------Achievements-----------------
+% \section{\textbf{Achievements}}
+% \vspace{-0.4mm}
+% \resumeSubHeadingListStart
+% \resumePOR{Achievement } % Award
+%     {description} % Event
+%     {Event dates} %Event Year
+    
+% \resumePOR{Achievement } % Award
+%     {description} % Event
+%     {Event dates} %Event Year
+% \resumeSubHeadingListEnd
+% \vspace{-5mm}
+
+
+
+%-------------------------------------------
 \end{document}
