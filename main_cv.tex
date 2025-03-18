@@ -26,6 +26,8 @@
 \usepackage{multicol}
 \usepackage{graphicx}
 \usepackage{cfr-lm}
+\usepackage{parskip}        % For paragraph spacing
+\usepackage{changepage}     % For adjustwidth environment
 \usepackage[T1]{fontenc}
 \setlength{\multicolsep}{0pt} 
 \pagestyle{fancy}
@@ -169,6 +171,13 @@
 
 }
 
+%-----PERSONAL DESCRIPTION-----%
+\section{\textbf{Personal Description}}
+\begin{adjustwidth}{0mm}{0mm}  % Remove paragraph indentation
+  \setlength{\parskip}{0.5em}     % Control spacing between lines
+  I am a computer engineer specializing in \textbf{Edge Computing}, \textbf{Machine Learning}, and \textbf{Reinforcement Learning}. My research focuses on hardware optimization for deep learning inference using NVIDIA Jetson Xavier NX. Experienced in real-time object detection (\textit{YOLOv4}, \textit{YOLOv5}, \textit{EfficientDet}) and model compression techniques. Proficient in \textbf{Python}, \textbf{TensorFlow}, and \textbf{PyTorch} for developing AI solutions optimized for edge devices. Published author in peer-reviewed journals with additional experience as teaching assistant and student leadership roles.
+  \end{adjustwidth}
+\vspace{-3.5mm}
 
 %-----------EDUCATION-----------
 \section{\textbf{Education}}
