@@ -28,6 +28,7 @@
 \usepackage{cfr-lm}
 \usepackage{parskip}        % For paragraph spacing
 \usepackage{changepage}     % For adjustwidth environment
+\usepackage{ragged2e}
 \usepackage[T1]{fontenc}
 \setlength{\multicolsep}{0pt} 
 \pagestyle{fancy}
@@ -165,7 +166,7 @@
 \begin{tabularx}{\linewidth}{C r} % Use 'c' for center alignment
   \\
   \textbf{\Huge \name} \\ % Adjust size with \Huge or \LARGE
-  \href{mailto:\emaila}{\raisebox{0.0\height}{\footnotesize \faEnvelope}\ {\emaila}} \href{https://github.com/administrator2992}{\raisebox{0.0\height}{\footnotesize \faGithub}\ {administrator2992}} \href{www.linkedin.com/in/ahmadnabhaan/}{\raisebox{0.0\height}{\footnotesize \faLinkedin}\ {ahmadnabhaan}}
+  \href{mailto:\emaila}{\raisebox{0.0\height}{\footnotesize \faEnvelope}\ {\emaila}} \href{https://github.com/administrator2992}{\raisebox{0.0\height}{\footnotesize \faGithub}\ {administrator2992}} \href{https://linkedin.com/in/ahmadnabhaan/}{\raisebox{0.0\height}{\footnotesize \faLinkedin}\ {ahmadnabhaan}}
 \end{tabularx}
 \end{center}
 
@@ -173,12 +174,15 @@
 
 %-----PERSONAL DESCRIPTION-----%
 \section{\textbf{Personal Description}}
-\vspace{-2mm}
-\begin{adjustwidth}{0mm}{0mm}  % Remove paragraph indentation
-  \setlength{\parskip}{0.5em}     % Control spacing between lines
+\begin{adjustwidth}{0mm}{0mm}
+  \justifying  % Force justified alignment
+  \setlength{\parindent}{0pt}  % No paragraph indentation
+  \setlength{\parskip}{2pt}    % Line spacing control
+  
   I am a computer engineer specializing in \textbf{Edge Computing}, \textbf{Machine Learning}, and \textbf{Reinforcement Learning}. My research focuses on hardware optimization for deep learning inference using NVIDIA Jetson Xavier NX. Experienced in real-time object detection (\textit{YOLOv4}, \textit{YOLOv5}, \textit{EfficientDet}) and model compression techniques. Proficient in \textbf{Python}, \textbf{TensorFlow}, and \textbf{PyTorch} for developing AI solutions optimized for edge devices. Published author in peer-reviewed journals with additional experience as teaching assistant and student leadership roles.
+  
   \end{adjustwidth}
-\vspace{-3mm}
+\vspace{-5.5mm}
 
 %-----------EDUCATION-----------
 \section{\textbf{Education}}
