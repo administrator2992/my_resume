@@ -18,8 +18,6 @@ jobs:
         uses: xu-cheng/latex-action@v3
         with:
           root_file: main_cv.tex
-          compiler: xelatex
-          args: "-interaction=nonstopmode -halt-on-error -file-line-error -pdf -xe"
       - name: Upload PDF file
         uses: actions/upload-artifact@v4
         with:
