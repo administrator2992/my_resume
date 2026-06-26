@@ -1,0 +1,25 @@
+Ahmad Naufal Labiib Nabhaan
+Ponorogo, Jawa Timur, Indonesia
+nabhaan.ahmad.ln@gmail.com | +62 853-1498-8120
+https://linkedin.com/in/ahmadnabhaan/
+
+June 26, 2026
+
+Hiring Team
+micro1
+
+Subject: Application for Machine Learning Researcher (Contractor)
+
+Dear Hiring Team,
+
+I am writing to express my strong interest in the Machine Learning Researcher position at micro1. With a solid foundation in computer engineering, hands-on experience in deep learning model optimization, and a proven track record of published research, I am excited about the opportunity to contribute to training your next-generation frontier AI models and evaluating AI agents.
+
+During my tenure as a Research Assistant, I co-authored and published peer-reviewed research at the 10th IEEE International Conference on Fog and Edge Computing (ICFEC 2026) focusing on Covariance-Guided Resource Adaptive Learning (CORAL). I led hardware resource optimization on NVIDIA Jetson Xavier NX for deep learning inference, achieving a 40% reduction in power consumption while ensuring stable, real-time model execution. Additionally, I designed and optimized face-mask detection models (YOLOv4) on constrained edge devices, resulting in a 3x inference speedup via post-training optimization. These experiences have allowed me to develop strong Python prototyping capabilities and in-depth expertise in deep learning frameworks.
+
+Collaborating across international research groups (including the University of Georgia and Universitas Gadjah Mada) has honed my communication and documentation skills. I am highly comfortable with remote collaboration, technical writing, and managing complex research projects independently. I believe my expertise in model training, evaluations, and structured feedback loops directly aligns with micro1's mission to build the human intelligence layer for frontier AI.
+
+Thank you for your time and consideration. I look forward to the possibility of discussing how my skills and research background can add value to the team at micro1.
+
+Sincerely,
+
+Ahmad Naufal Labiib Nabhaan
