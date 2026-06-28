@@ -1,0 +1,28 @@
+Ahmad Naufal Labiib Nabhaan
+Ponorogo, Jawa Timur, Indonesia
+nabhaan.ahmad.ln@gmail.com | +62 853-1498-8120
+https://linkedin.com/in/ahmadnabhaan/
+
+28 Juni 2026
+
+Tim Perekrut
+PT Mertani Merapi Tani Instrumen
+Sleman, Yogyakarta, Indonesia
+
+Hal: Lamaran Pekerjaan - Hardware Engineer
+
+Dengan hormat,
+
+Saya menulis surat ini untuk menyatakan ketertarikan saya yang besar pada posisi Hardware Engineer di PT Mertani Merapi Tani Instrumen. Berdasarkan latar belakang pendidikan saya di bidang Teknik Komputer dengan spesialisasi Internet of Things (IoT), pengalaman praktis saya sebagai IoT Engineer yang mendalam tentang perancangan sirkuit perangkat keras, serta ketertarikan saya dalam mengaplikasikan teknologi IoT pada sektor pertanian dan industri, saya sangat bersemangat untuk dapat bergabung dan berkontribusi di perusahaan Anda.
+
+Saya baru saja lulus dari program S1 Teknik Komputer di Universitas AMIKOM Yogyakarta dengan IPK 3,88. Selama masa studi, saya terpilih dalam program Pertukaran Mahasiswa di Institut Teknologi Bandung (ITB). Dalam program tersebut, saya merancang dan merekayasa sistem kontrol lingkungan otomatis untuk kandang ayam industri berbasis ESP32. Proyek ini memberikan saya pemahaman praktis yang kuat tentang instrumentasi elektronik dasar (multimeter, osiloskop), integrasi sensor fisik analog/digital, serta pengujian prototipe hardware lapangan—pengalaman yang sangat sejalan dengan fokus PT Mertani dalam menghadirkan teknologi presisi untuk pertanian dan perkebunan.
+
+Setelah lulus, saya bekerja sebagai IoT Engineer di Banwibu (PT. Lambang Wibu Sejati). Pada peran tersebut, saya merancang dan mengembangkan prototipe perangkat keras sirkuit pintar untuk sistem penguncian pintar (smart lock) berbasis ESP32 menggunakan EasyEDA, yang terbukti mengurangi kegagalan pembacaan aktuator sebesar 20% melalui desain PCB yang presisi. Saya juga menguasai komunikasi data tingkat rendah seperti UART, SPI, dan I2C, serta protokol komunikasi IoT seperti MQTT dan BLE. Selain itu, saya terbiasa melakukan debugging, validasi, dan troubleshooting sistem hardware secara sistematis untuk memelihara mesin otomasi industri di Unitama Sari Mas guna mempertahankan tingkat uptime hingga 99,8%.
+
+Saya juga memiliki keahlian dalam menyusun dokumentasi teknis yang rapi terkait desain sirkuit, skema kelistrikan, dan hasil pengujian perangkat keras untuk memastikan kolaborasi yang lancar dengan tim software dan firmware. Dengan kemampuan problem-solving yang kuat, ketelitian tinggi dalam trial-and-error laboratorium, serta kedekatan geografis saya di Yogyakarta, saya yakin dapat langsung beradaptasi dan memberikan kontribusi nyata bagi kelangsungan pengembangan produk IoT di PT Mertani Merapi Tani Instrumen.
+
+Terima kasih atas waktu dan pertimbangan Anda. Saya sangat menantikan kesempatan untuk melakukan wawancara guna membahas bagaimana keahlian dan portofolio rekayasa perangkat keras saya dapat membantu mewujudkan solusi IoT pertanian yang andal bersama PT Mertani.
+
+Hormat saya,
+
+Ahmad Naufal Labiib Nabhaan

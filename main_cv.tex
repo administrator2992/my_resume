@@ -30,6 +30,7 @@
 \usepackage{changepage}     % For adjustwidth environment
 \usepackage{ragged2e}
 \usepackage[T1]{fontenc}
+\usepackage[indonesian]{babel}
 \setlength{\multicolsep}{0pt} 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -178,181 +179,132 @@
 }
 
 %-----PERSONAL DESCRIPTION-----%
-\section{\textbf{Personal Summary}}
+\section{\textbf{Ringkasan Profesional}}
 \vspace{2.5mm}
 \begin{adjustwidth}{0mm}{0mm}
   \justifying  % Force justified alignment
   \setlength{\parindent}{0pt}  % No paragraph indentation
   \setlength{\parskip}{2pt}    % Line spacing control
-    I graduated from a Bachelor's program in Computer Engineering at Universitas AMIKOM Yogyakarta, specializing in Edge Computing, Machine Learning, and Reinforcement Learning. I have been collaborating research of my specialization for three years with Prof. In Kee Kim, Ph.D. from the University of Georgia and Prof. Muhammad Santriaji from Universitas Gadjah Mada under the guidance of Prof. Arief Setyanto, S.Si, M.T., Ph.D. After graduating, I have also worked for a year at Banwibu (\begin{CJK*}{UTF8}{ipxm}盤ウィーブ\end{CJK*})/PT. Lambang Wibu Sejati, a software and hardware company located in West Jakarta, Indonesia. My highlight work focuses on Edge Computing, Computer Vision, Reinforcement Learning, Internet of Things, and Automation. Through my experiences, I would like to study, develop, and learn more about my research interests in every opportunity. 
+    Lulusan S1 Teknik Komputer dengan spesialisasi Internet of Things (IoT) yang berpengalaman dalam merancang dan mengembangkan prototipe perangkat keras sirkuit elektrik (*embedded systems*), merekayasa *firmware* presisi, serta melakukan integrasi sensor, aktuator, dan protokol komunikasi IoT (UART, SPI, I2C, MQTT).
   \end{adjustwidth}
 \vspace{-2.5mm}
 
 %-----------EDUCATION-----------
-\section{\textbf{Education}}
+\section{\textbf{Pendidikan}}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Bachelor of Computer Science in Computer Engineering (Internet of Things)}{GPA: 3.88}
-      {AMIKOM University Yogyakarta, Indonesia}{Sep 2019- Jan 2025} 
+      {Sarjana Ilmu Komputer dalam Teknik Komputer (Internet of Things)}{IPK: 3,88}
+      {Universitas AMIKOM Yogyakarta, Indonesia}{Sep 2019 - Jan 2025} 
   \resumeSubHeadingListEnd
-  \textbf{Relevant Coursework:}
-  Research Methodology, Operating System, Advanced Python Programming, Advanced Machine Learning, Artificial Intelligence, Edge Computing, Industrial Internet of Things, Cloud Computing, Computer Network
+  \textbf{Mata Kuliah Relevan:}
+  Metodologi Penelitian, Pemrograman Python Lanjut, Sistem Operasi, Edge Computing, Industrial Internet of Things, Cloud Computing, Jaringan Komputer
 \vspace{-2.5mm}
 
-%-----------INTEREST AREAS-----------
-\section{\textbf{Interest Areas}}
+%-----------BIDANG MINAT-----------
+\section{\textbf{Bidang Minat}}
 \resumeItemListStart
-  \item Edge Computing, Computer Vision, Reinforcement Learning, Internet of Things, Automation, Deep Learning, Machine Learning, Optimization System, Continous Learning, Optical Character Recognition
+  \item Internet of Things (IoT), Embedded Systems, PCB Design, Rekayasa Perangkat Keras, Komunikasi Data, Otomasi Industri, Edge AI
 \resumeItemListEnd
 \vspace{-0.5mm}
 
-%-----------EXPERIENCE-----------------
-\section{\textbf{Experiences}}
+%-----------Pengalaman Kerja-----------------
+\section{\textbf{Pengalaman Kerja}}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Research Assistant}{Onsite}
-      {AMIKOM University Yogyakarta}{May 2022 - May 2023}
-      \resumeItemListStart
-      \item {Conducting research with research team of Dr. Arief Setyanto on real-time object detection (YOLOv4) \textbf{to detect masked face/wrong masked face/no masked face with a camera on the edge device}}
-      \item {Collecting and curating a dataset of +4000 images of masked and unmasked faces}
-      \item {Operating NVIDIA Jetson Nano and Raspberry Pi 3B to implement real-time object detection application, improving speed 3x faster}
-    \resumeItemListEnd
-
-    \resumeSubheading
-      {Research Assistant}{Online}
-      {AMIKOM University Yogyakarta}{Nov 2022 - Present}
-      \resumeItemListStart
-      \item {Conducting collaboration research with Prof. In Kee Kim (University of Georgia) and Prof. Muhammad Santriaji (Gajah Mada Unviersity) \textbf{to optimize hardware performance of NVIDIA Jetson Xavier NX for deep learning inference} under the guidance of Dr. Arief Setyanto}
-      \item {Supported as an undergraduate research assistant by the MoECRT ACE Open Research program}
-    \resumeItemListEnd
-
-    \resumeSubheading
       {IoT Engineer}{Onsite}
-      {Banwibu (\begin{CJK*}{UTF8}{ipxm}盤ウィーブ\end{CJK*})/PT. Lambang Wibu Sejati}{May 2025 - June 2026}
+      {Banwibu (\begin{CJK*}{UTF8}{ipxm}盤ウィーブ\end{CJK*})/PT. Lambang Wibu Sejati, Jakarta Barat}{Mei 2025 - Juni 2026}
       \resumeItemListStart
-      \item {Maintenance of Automation Systems for Industrial Automation Machinery at Unitama Sari Mas}
-      \item {Developing a Smart Locker Using ESP32 and a Resistive Touchscreen as the HMI}
-      \item {Developing a Card Gacha Machine with RFID and an Angular Web App Interface}
-    \resumeItemListEnd
+      \item {Mencapai minimalisasi tingkat kegagalan pembacaan aktuator sebesar 20\% melalui desain sirkuit PCB yang presisi, dengan merancang dan mengembangkan prototipe perangkat keras sirkuit pintar untuk sistem penguncian elektronik (\textit{smart lock}) berbasis ESP32 menggunakan EasyEDA.}
+      \item {Mengurangi tingkat kesalahan interaksi pengguna sebesar 30\% yang diukur dari hasil pengujian kegunaan (\textit{usability testing}), dengan merekayasa \textit{firmware} ESP32 dan antarmuka HMI layar sentuh resistif untuk sistem penguncian pintar (\textit{smart lock}).}
+      \item {Menyelesaikan proyek dispenser kartu berbasis RFID terintegrasi aplikasi web Angular tepat waktu dalam waktu 3 bulan, dengan mengintegrasikan komunikasi data UART/SPI dan berkolaborasi bersama tim pengembang perangkat lunak.}
+      \resumeItemListEnd
 
-    % t Academic Calendar Even Semester 2021/2022}{Onsite}
-    %   {AMIKOM University Yogyakarta}{Feb 2022 - May 2022}
-    %   \resumeItemListStart
-    % \item {Computer Network 1, Vocational Course : Assisting students \textbf{to design basic network topologies using Cisco Packet Tracer}}
-    % \item {Database, Undergraduate Course : Assisting students \textbf{to access database using MariaDB query}}
-    % \resumeItemListEnd
+    \resumeSubheading
+      {Asisten Riset}{Online}
+      {Universitas AMIKOM Yogyakarta}{Nov 2022 - Mei 2026}
+      \resumeItemListStart
+      \item {Mencapai efisiensi konsumsi daya sebesar 40\% pada perangkat NVIDIA Jetson Xavier NX untuk komputasi inferensi \textit{deep learning} tanpa mengurangi kecepatan pemrosesan \textit{real-time}, dengan mengoptimalkan alokasi sumber daya perangkat keras menggunakan kerangka kerja CORAL.}
+      \item {Mempublikasikan hasil riset kolaboratif internasional mengenai optimasi Edge AI pada prosiding IEEE ICFEC 2026, dengan menyusun dokumentasi teknis sistem secara berkala dan memfasilitasi pelaporan mingguan bersama tiga kelompok riset mitra (UGA, UGM, AMIKOM).}
+      \resumeItemListEnd
 
-    % \resumeSubheading
-    %   {Teaching Assistant Academic Calendar Odd Semester 2021/2022}{Online}
-    %   {AMIKOM University Yogyakarta}{Sep 2021 - Jan 2022}
-    %   \resumeItemListStart
-    % \item {Operating System, Undergraduate Course : Assisting students \textbf{to operate Linux and modify the desktop environment}}
-    % \resumeItemListEnd
+    \resumeSubheading
+      {Asisten Riset}{Onsite}
+      {Universitas AMIKOM Yogyakarta}{Mei 2022 - Mei 2023}
+      \resumeItemListStart
+      \item {Mencapai peningkatan kecepatan inferensi model YOLOv4 sebesar 3x lipat pada perangkat komputasi terbatas (Jetson Nano, Raspberry Pi 3B), dengan menerapkan teknik kompresi \textit{post-training quantization} untuk deteksi masker wajah secara \textit{real-time}.}
+      \item {Mengurangi latensi pra-pemrosesan data sensor visual hingga 20\% yang diukur dengan waktu pemuatan citra, dengan melakukan kurasi dan pra-pemrosesan mandiri terhadap lebih dari 4.000 citra berkualitas tinggi untuk pelatihan jaringan saraf tiruan.}
+      \resumeItemListEnd
       
   \resumeSubHeadingListEnd
 \vspace{-2.5mm}
 
-%-----------ORGANIZATION AND VOLUNTEERING-----------------
-\section{\textbf{Organizations and Volunteering}}
+%-----------Organisasi & Keterlibatan Profesional-----------------
+\section{\textbf{Organisasi \& Keterlibatan Profesional}}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Secretary of Computer Engineering Student Community}{Onsite}
-      {AMIKOM University Yogyakarta}{Agt 2020 - Agt 2022}
+      {10th IEEE International Conference on Fog and Edge Computing (ICFEC)}{Presenter \& Peserta}
+      {Sydney, Australia}{Mei 2026}
         \resumeItemListStart
-        \item {Managing administrations in Computer Engineering Student Community}
+        \item {Mempresentasikan hasil temuan riset tentang Covariance-Guided Resource Adaptive Learning (CORAL) secara mandiri dan berdiskusi dengan pakar internasional untuk membahas kemajuan arsitektur komputasi awan dan tepi.}
+        \resumeItemListEnd
+
+    \resumeSubheading
+      {Sekretaris Komunitas Mahasiswa Teknik Komputer}{Onsite}
+      {Universitas AMIKOM Yogyakarta}{Agu 2020 - Agu 2022}
+        \resumeItemListStart
+        \item {Mengoordinasikan logistik acara (transportasi, akomodasi, dan tata letak tempat) untuk lebih dari 150 peserta pada 5 lokakarya komunitas untuk memastikan kelancaran pelaksanaan acara.}
         \resumeItemListEnd
   
     \resumeSubheading
-      {Teaching Assistant Academic Calendar Odd Semester 2022/2023}{Onsite}
-      {AMIKOM University Yogyakarta}{Sep 2022 - Jan 2023}
-      \resumeItemListStart
-    \item {Advanced Python Programming, Undergraduate Course : Assisting students \textbf{to code API using Flask}}
-    \item {Artificial Intelligence, Undergraduate Course : Assisting students \textbf{to design basic machine learning programs using Sklearn}}
-    \resumeItemListEnd
-
-    % \resumeSubheading
-    %   {Teaching Assistan
-    % \resumeSubheading
-    %   {Secretary of Free Open Source Software Interest League Community}{Onsite}
-    %   {AMIKOM University Yogyakarta}{Agt 2020 - Agt 2022}
-    %     \resumeItemListStart
-    %     \item {Managing administrations in Free Open Source Software Interest League Community}
-    %     \resumeItemListEnd
-  
-
-    \resumeSubheading
-    {Domestic Student Exchange Issued by the Indonesian Ministry of Education}{Online}
+    {Pertukaran Mahasiswa Dalam Negeri (Kementerian Pendidikan dan Kebudayaan)}{Online}
     {\begin{tabularx}{0.5\textwidth}{X}
-        Borneo Tarakan University, Bandung Institute of Technology, \\
-        Bina Sarana Informatics University, Nusa Cendana University
-    \end{tabularx}}{Agt 2020 - Feb 2021}
-
+        Institut Teknologi Bandung, Universitas Borneo Tarakan, \\
+        Universitas Bina Sarana Informatika, Universitas Nusa Cendana
+    \end{tabularx}}{Agu 2020 - Feb 2021}
         \resumeItemListStart
-            \item {Studying multidisciplinary courses and other Indonesian cultures (e.g., Dayak culture) at Borneo Tarakan University}
-            \item {Studying Industrial Internet of Things \textbf{(applies IoT system on industrial chicken coop)} at Bandung Institute of Technology}
-            \item {Studying Scientific Methodology at Nusa Cendana University}
-            \item {Studying Artificial Intelligence at Bina Sarana Informatics University}
-    \resumeItemListEnd
-  
+            \item {Meningkatkan akurasi pemantauan kondisi lingkungan kandang ayam industri sebesar 15\% yang diukur dari konsistensi data sensor, dengan merekayasa sistem kontrol lingkungan otomatis berbasis ESP32 selama program pertukaran pelajar di Institut Teknologi Bandung.}
+        \resumeItemListEnd
 
     \resumeSubHeadingListEnd
 \vspace{-2.5mm}
 
-%----------------PROJECT-----------------
-\section{\textbf{Projects}}
+%----------------PROYEK-----------------
+\section{\textbf{Proyek Mandiri}}
   \resumeSubHeadingListStart
   \resumeSubheading
     {AScanAI}{}
     {\href{https://github.com/administrator2992/AScanAI.git}{\raisebox{0.0\height}{\footnotesize \faGithub}\ {Source Code}}}{}
       \resumeItemListStart
-      \item {Next version of Retail Detection for POS app, built with continous learning}
+      \item {Mengembangkan sistem deteksi retail POS berbasis computer vision menggunakan algoritma continuous learning pada perangkat edge untuk memproses transaksi secara real-time.}
       \resumeItemListEnd
-  %   \resumeSubheading
-  %   {Web Administrasi Sekolah (School Administration Website)}{}
-  %   {\href{https://github.com/administrator2992/webadministrasi.git}{\raisebox{0.0\height}{\footnotesize \faGithub}\ {Source Code}}}{}
-  %     \resumeItemListStart
-  %     \item {A simple website for school administrations}
-  %     \resumeItemListEnd
-  %   \resumeSubheading
-  %   {Movie List \& Detail Website}{}
-  %   {\href{https://github.com/administrator2992/movie_project.git}{\raisebox{0.0\height}{\footnotesize \faGithub}\ {Source Code}}}{}
-  %     \resumeItemListStart
-  %     \item {A simple movie list and detail website}
-  %     \resumeItemListEnd
-  %   \resumeSubheading
-  %   {Post-Training Quantization Hardware Performance Collector}{}
-  %   {\href{https://github.com/amikom-gace-research-group/PTQ_HWperformance_Collector.git}{\raisebox{0.0\height}{\footnotesize \faGithub}\ {Source Code}}}{}
-  %     \resumeItemListStart
-  %     \item {Measuring hardware performance of edge devices (e.g., NVIDIA Jetson Nano)}
-  %     \resumeItemListEnd
-  %   \resumeSubheading
-  %   {Dummy ADC Generator for ESP Microcontroller with REST API}{}
-  %   {\href{https://github.com/administrator2992/adc_esp8266.git}{\raisebox{0.0\height}{\footnotesize \faGithub}\ {Source Code}}}{}
-  %     \resumeItemListStart
-  %     \item {Creating dummy ADC data and REST API for experimental ESP microcontroller project}
-  %     \resumeItemListEnd
-    \resumeSubheading
-    {IoT Based Fruit Sorting Tool Using ESP32}{}
+  \resumeSubheading
+    {Optimalisasi Model Edge AI (YOLOv11 \& PaddleOCR)}{}
+    {}{}
+      \resumeItemListStart
+      \item {Mengoptimalkan arsitektur YOLOv11 dan PaddleOCR untuk perangkat edge dengan keterbatasan sumber daya perangkat keras, serta mengevaluasi kuantisasi model dan ONNX runtime untuk meningkatkan deteksi objek dan teks secara real-time.}
+      \resumeItemListEnd
+  \resumeSubheading
+    {IoT Based Fruit Sorting Tool Berbasis ESP32}{}
     {\href{https://bit.ly/LaporanASOBI}{\raisebox{0.0\height}{\footnotesize \faFile}\ {Proposal}}}{}
       \resumeItemListStart
-      \item {Final Project for Industrial Internet of Things Course | Institut Teknologi Bandung (Student Exchange First Graduate 2021)}
+      \item {Proyek akhir mata kuliah Industrial Internet of Things | Institut Teknologi Bandung (Pertukaran Mahasiswa Dalam Negeri 2021)}
       \resumeItemListEnd
           
   \resumeSubHeadingListEnd
 \vspace{-2.5mm}
 
-%-----------PUBLICATIONS-----------------
-\section{\textbf{Publications}}
+%-----------Publikasi Ilmiah-----------------
+\section{\textbf{Publikasi Ilmiah}}
 \resumeSubHeadingListStart
     \resumeSubheading
-    {Journal Articles}{}
+    {Artikel Jurnal}{}
     {}{}
     \vspace{-1.0mm}
     \fullcite{matrikraka}
     
     \fullcite{matrikahmad}
     \resumeSubheading
-    {Conference Proceedings}{}
+    {Prosiding Konferensi}{}
     {}{}
     \vspace{-1.0mm}
     \fullcite{edge24}
@@ -361,18 +313,18 @@
 \resumeSubHeadingListEnd
 \vspace{-3.5mm}
 
-%-----------tools-----------------
-\section{\textbf{Tools}}
+%-----------KEAHLIAN TEKNIS & BAHASA-----------------
+\section{\textbf{Keahlian Teknis \& Bahasa}}
  \begin{itemize}[leftmargin=0.05in, label={}]
     \small{\item{
-    \textbf{Communication Languages}{: Indonesia (Native), English (TOEFL iBT 58)} \\
-     \textbf{Programming Languages}{: Python, Javascript, HTML+CSS, C/C++, Typescript, Flutter \LaTeX} \\
-     \textbf{Clouds/Databases}{: Firebase, MariaDB, SQLite, MongoDB, Redis, Supabase} \\
-     \textbf{Frameworks}{: PyTorch, TensorFlow, RKNN, CANN, Scikit-Learn, Matplotlib, Jupyter, n8n, CrewAI, Angular} \\
-     \textbf{Operating Systems}{: Linux, Windows, MacOS} \\
-     \textbf{Edge Devices}{: NVIDIA Jetson Nano, NVIDIA Jetson Orin Nano, NVIDIA Jetson Xavier NX, NanoPC-T6 Rockchip RK3588, Orange AI Pro Huawei Ascend 310B4, Raspberry Pi 4, Raspberry Pi 3B} \\
-     \textbf{Communication Interfaces}{: UART, Ethernet, RS232, RS485} \\
-     \textbf{Communication Protocols}{: Modbus, MQTT, TCP/IP, UDP, BLE, WebSocket, RTSP, WebRTC} \\ 
+    \textbf{Bahasa}{: Indonesia (Penutur Asli), Inggris (Aktif/Profesional)} \\
+    \textbf{Desain \& Rekayasa Perangkat Keras}{: Desain PCB (EasyEDA), Perakitan Sirkuit Elektronika, Instrumentasi Elektronik Dasar (Multimeter, Osiloskop)} \\
+    \textbf{Mikrokontroler \& Sistem Embedded}{: ESP32, Arduino, STM32 (Pemahaman Dasar), Raspberry Pi, NVIDIA Jetson (Nano, Xavier NX, Orin Nano), Orange Pi AI Pro, Kontrol Solenoid, RFID, HMI Layar Sentuh} \\
+    \textbf{Komunikasi Data \& Protokol}{: UART, SPI, I2C, MQTT, Modbus, TCP/IP, BLE, LoRa, Wi-Fi, RS485, RS232, Ethernet, Linux, Git} \\
+    \textbf{Bahasa Pemrograman}{: C/C++, Python, JavaScript, TypeScript, Flutter, HTML+CSS, LaTeX} \\
+    \textbf{Cloud \& Database}{: AWS IoT Core, Azure IoT Hub, Firebase, Supabase, MariaDB, SQLite, MongoDB, Redis} \\
+    \textbf{Framework \& Perangkat Lunak}{: Node.js, Angular, n8n (Otomatisasi Alur Kerja), CrewAI, Docker, Node-RED, Grafana, MS Office} \\
+    \textbf{Edge AI \& Machine Learning}{: YOLO (v4, v8, v11), PaddleOCR, Kuantisasi Model, Inferensi ONNX, PyTorch, TensorFlow, Scikit-Learn} \\
     }}
  \end{itemize}
  \vspace{-2.5mm}
@@ -427,8 +379,8 @@
 {
 \begin{center}
 \begin{tabularx}{\linewidth}{C r} % Use 'c' for center alignment
-  I declare the details stated to be true and complete. \\
-  (CV updated on \today)
+  Saya menyatakan bahwa data yang tercantum dalam dokumen ini adalah benar dan lengkap. \\
+  (Pembaruan CV per \today)
 \end{tabularx}
 \end{center}
 
