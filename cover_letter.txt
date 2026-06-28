@@ -1,0 +1,28 @@
+Ahmad Naufal Labiib Nabhaan
+Ponorogo, Jawa Timur, Indonesia
+nabhaan.ahmad.ln@gmail.com | +62 853-1498-8120
+https://linkedin.com/in/ahmadnabhaan/
+
+28 Juni 2026
+
+Tim Perekrut
+PT Yipu Teknologi Alami
+Yogyakarta, Indonesia
+
+Hal: Lamaran Pekerjaan - Junior IoT Engineer
+
+Dengan hormat,
+
+Saya menulis surat ini untuk menyatakan ketertarikan saya yang besar pada posisi Junior IoT Engineer di PT Yipu Teknologi Alami. Berdasarkan latar belakang pendidikan saya di bidang Teknik Komputer dengan spesialisasi Internet of Things (IoT), pengalaman praktis saya sebagai IoT Engineer di industri, serta rekam jejak riset dalam optimalisasi Edge AI, saya sangat bersemangat untuk dapat berkontribusi dalam merancang ekosistem IoT end-to-end yang menghubungkan dunia fisik dan digital di perusahaan Anda.
+
+Saya baru saja lulus dari program S1 Teknik Komputer di Universitas AMIKOM Yogyakarta dengan IPK 3,88. Selama masa studi, saya juga berkesempatan mengikuti program Pertukaran Mahasiswa di Institut Teknologi Bandung (ITB), di mana saya merancang sistem kontrol lingkungan otomatis berbasis ESP32 untuk kandang ayam industri. Proyek ini memberikan saya pemahaman mendalam mengenai instrumentasi sirkuit, integrasi sensor analog/digital, serta pemrograman mikrokontroler menggunakan C/C++.
+
+Setelah kelulusan, saya bekerja sebagai IoT Engineer di Banwibu (PT. Lambang Wibu Sejati). Di sana, saya bertanggung jawab penuh dalam menulis dan menguji firmware ESP32 untuk sistem penguncian pintar (smart lock), mengembangkan antarmuka HMI layar sentuh resistif, serta membangun dispenser kartu berbasis RFID yang terintegrasi dengan web app Angular. Saya juga terbiasa melakukan troubleshooting sistematis pada tingkat hardware maupun software untuk memelihara mesin otomasi industri di Unitama Sari Mas, yang berhasil meningkatkan uptime operasional hingga 99,8%. Pengalaman ini melatih saya untuk bekerja secara mandiri maupun berkolaborasi lintas tim dalam lingkungan yang dinamis.
+
+Selain rekayasa perangkat keras IoT tradisional, saya memiliki keahlian khusus di bidang kecerdasan buatan (AI) dan Machine Learning pada perangkat edge (Edge AI / TinyML). Sebagai Asisten Riset, saya berhasil meningkatkan kecepatan inferensi model YOLOv4 hingga 3x lipat pada perangkat Jetson Nano dan Raspberry Pi menggunakan teknik post-training quantization. Saya juga berkolaborasi dalam riset internasional (dengan University of Georgia dan UGM) untuk mengoptimalkan efisiensi daya komputasi NVIDIA Jetson Xavier NX sebesar 40%. Keahlian AI/ML ini siap saya terapkan sebagai multiplier effect untuk menghadirkan solusi IoT yang lebih cerdas dan prediktif bagi PT Yipu Teknologi Alami.
+
+Saya sangat antusias dengan kesempatan untuk bergabung dan tumbuh bersama tim profesional PT Yipu Teknologi Alami di Yogyakarta. Terima kasih atas waktu dan pertimbangan Anda. Saya sangat menantikan kesempatan untuk berdiskusi lebih lanjut mengenai bagaimana keahlian dan portofolio saya dapat mendukung tujuan proyek IoT perusahaan Anda.
+
+Hormat saya,
+
+Ahmad Naufal Labiib Nabhaan
