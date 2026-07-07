@@ -10,3 +10,5 @@
 *.bcf
 *.xml
 *.synctex*
+/.DS_Store
+*.zip
